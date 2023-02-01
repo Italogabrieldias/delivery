@@ -2,13 +2,12 @@ package com.deliver.delivery.entities;
 
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Objects;
 
 @Entity
-@Table(name = "tb_products")
+@Table(name = "tb_product")
 public class Product {
+    private static final long serialVersionUID = 1l;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -18,8 +17,6 @@ public class Product {
     private String description;
     private String imageUri;
 
-    @ManyToMany(mappedBy = "products")
-    private List<Order> orders = new ArrayList<>();
 
     public Product (){}
 
@@ -71,9 +68,6 @@ public class Product {
         this.imageUri = imageUri;
     }
 
-    public List<Order> getOrders() {
-        return orders;
-    }
 
     @Override
     public boolean equals(Object o) {

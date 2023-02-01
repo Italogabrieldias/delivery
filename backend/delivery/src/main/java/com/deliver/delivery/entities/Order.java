@@ -2,7 +2,6 @@ package com.deliver.delivery.entities;
 
 import com.deliver.delivery.enums.OrderStatus;
 
-
 import javax.persistence.*;
 import java.io.Serializable;
 import java.time.Instant;
@@ -11,8 +10,9 @@ import java.util.Objects;
 import java.util.Set;
 
 @Entity
-@Table(name = "td_orders")
+@Table(name = "tb_order")
 public class Order implements Serializable {
+    private static final long serialVersionUID = 1l;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -23,20 +23,24 @@ public class Order implements Serializable {
     @Column(columnDefinition = "TEXT")
     private Instant moment;
     private OrderStatus status;
-    private Double total;
+
 
     @ManyToMany
-    private Set<Product>products = new HashSet<>();
-    public Order (){}
+    @JoinTable(name = "tb_order_product", joinColumns = @JoinColumn(name = "order_id"),
+            inverseJoinColumns = @JoinColumn(name = "product_id")
+    )
+    private Set<Product> products = new HashSet<>();
 
-    public Order(Long id, String address, Double latitude, Double longitude, Instant moment, OrderStatus status, Double total) {
+    public Order() {
+    }
+
+    public Order(Long id, String address, Double latitude, Double longitude, Instant moment, OrderStatus status) {
         this.id = id;
         this.address = address;
         this.latitude = latitude;
         this.longitude = longitude;
         this.moment = moment;
         this.status = status;
-        this.total = total;
     }
 
     public Long getId() {
@@ -85,14 +89,6 @@ public class Order implements Serializable {
 
     public void setStatus(OrderStatus status) {
         this.status = status;
-    }
-
-    public Double getTotal() {
-        return total;
-    }
-
-    public void setTotal(Double total) {
-        this.total = total;
     }
 
     public Set<Product> getProducts() {
