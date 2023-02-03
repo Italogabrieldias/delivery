@@ -95,6 +95,7 @@ public class Order implements Serializable {
         return products;
     }
 
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

@@ -6,6 +6,7 @@ import com.deliver.delivery.entities.Product;
 import com.deliver.delivery.repositories.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.io.Serializable;
 import java.util.List;
@@ -18,6 +19,7 @@ public class ProductService implements Serializable {
     @Autowired
     private ProductRepository repository;
 
+    @Transactional(readOnly = true)
     public List<ProductDTO> findAll (){
         List<Product> list = repository.findAllByOrderByNameAsc();
         return list.stream().map(x -> new  ProductDTO(x)).collect(Collectors.toList());

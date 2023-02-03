@@ -1,7 +1,8 @@
 package com.deliver.delivery.resources;
 
-import com.deliver.delivery.dto.ProductDTO;
-import com.deliver.delivery.services.ProductService;
+import com.deliver.delivery.dto.OrderDTO;
+import com.deliver.delivery.repositories.OrderRepository;
+import com.deliver.delivery.services.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,18 +10,21 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/products")
-public class ProductResource implements Serializable {
+@RequestMapping(value = "/orders")
+public class OrderResource implements Serializable {
     private static final long serialVersionUID = 1l;
+
     @Autowired
-    private ProductService service;
+    private OrderService service;
 
     @GetMapping
-    public ResponseEntity<List<ProductDTO>> findAll(){
-        List<ProductDTO> list = service.findAll();
+    public ResponseEntity<List<OrderDTO>> findAll(){
+        List<OrderDTO> list = service.findAll();
         return ResponseEntity.ok().body(list);
     }
+
 }
