@@ -7,15 +7,14 @@ import Orders from "./Orders";
   function Routers() {
     return (
       <BrowserRouter>
-        <Navbar/ >
-        <Switch></Switch>
-          <Route path="/">
-            <Home/>
-              </Route>   
-          <Route path="Orders" >
+      <Navbar/>
+        <Switch>
+        <Route path="/Orders" ><Orders /></Route>
+          <Route path="/"><Home /></Route>  
 
-            <Orders/>
-          </Route>
+              
+              </Switch>
+         
     
       
       </BrowserRouter>
