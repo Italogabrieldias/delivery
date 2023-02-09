@@ -23,9 +23,11 @@ function Home(){
                     <MainImage/>
                 </div>
             </div>
+           
         </div>
         <Footer/>
         </>
+        
     )
     
 }
