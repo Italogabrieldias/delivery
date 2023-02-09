@@ -6,8 +6,9 @@ import { Link } from 'react-router-dom';
 
 function Home(){
     return (
-        <>
-        <div className="home-conteiner">
+        
+       <>
+        <div className="home-container">
             <div className="home-content">
                 <div className="home-actions">
                     <h1 className="home-title"> faça seu pedido <br/> que entrgamos <br/> para voce!!!
@@ -23,10 +24,11 @@ function Home(){
                     <MainImage/>
                 </div>
             </div>
-           
         </div>
-        <Footer/>
-        </>
+        <Footer />
+       
+       </>
+       
         
     )
     
