@@ -17,7 +17,7 @@ function Home(){
                     levaremoss na sua porta
                     </h3>
 
-                    <Link className="home-btn-order" to='Orders'>
+                    <Link className="home-btn-order" to='orders'>
                          FAZER PEDIDO</Link>
                 </div>
                 <div className="home-image">
