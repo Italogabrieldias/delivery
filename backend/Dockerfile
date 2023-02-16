@@ -1,7 +1,14 @@
+# Imagem base
+FROM adoptopenjdk:17-jre-hotspot
 
-FROM openjdk:17
+# Diretório de trabalho do aplicativo
+WORKDIR /delivery
 
-VOLUME /tmp
-EXPOSE 8080
-ADD ./target/delivery-0.0.1-SNAPSHOT.jar delivery.jar
-ENTRYPOINT ["java","-jar","/delivery.jar"]
+# Copia o arquivo JAR para o diretório de trabalho
+COPY target/*.jar delivery.jar
+
+# Expor a porta 8080
+EXPOSE 8081
+
+# Comando para iniciar o aplicativo
+CMD ["java", "-jar", "delivery.jar"]
