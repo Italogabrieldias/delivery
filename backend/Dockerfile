@@ -1,14 +1,15 @@
-# Imagem base
-FROM adoptopenjdk:17-jre-hotspot
+FROM ubuntu:latest AS build
 
-# Diretório de trabalho do aplicativo
+RUN apt-get update
+RUN apt-get install openjdk-17-jdk -y
+COPY . .
+
 WORKDIR /delivery
 
-# Copia o arquivo JAR para o diretório de trabalho
-COPY target/*.jar delivery.jar
+FROM openjdk:17-jdk-slim
 
-# Expor a porta 8080
 EXPOSE 8081
 
-# Comando para iniciar o aplicativo
-CMD ["java", "-jar", "delivery.jar"]
+COPY --from=build /build/libs/demo-1.jar app.jar
+
+ENTRYPOINT ["java", "-jar", "app.jar"]
