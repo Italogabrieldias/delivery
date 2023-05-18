@@ -1,11 +1,32 @@
 # Delivery
-## Projeto desenvolvido no intuito de aprendizado. 
-## desenvolvimento de sistema de pedidos e entrega. 
-### o Intuido desse projeto é reforça os conhecimento adiquidos sobre spring boot, e react.JS,
-### tendo em vista avança na minha carreira profissional e pessoal dentro do desenvolvimento com backend. 
-### e futuramente ser um desenvolvedor fullstack. 
-### nesse projeto exercitamos as funcionalidades basicas do spring boot, com spring web, tendo as funções de buscar e inserir.
-### desenvolvendo um banco de dados em postgresql
+
+
+###O que aprendemos nesse projeto.
+####Criar um simples projeto Java web no Spring Boot e Maven
+####Introdução prática a injeção de dependência no Spring Boot
+####Introdução prática a REST / web services
+####Introdução prática ao Spring Data JPA com banco H2.
+
+ #Checklist
+-Setup inicial do projeto
+*Dependências
+*Arquivos .properties
+*Configuração de segurança
+-Modelo de domínio
+*Entidades e relacionamentos
+*Mapeamento objeto-relacional
+*Seed
+-Criar endpoints
+*[GET] /products
+*[GET] /orders
+*[POST] /orders
+*[PUT] /orders/{id}/delivered
+-Validar perfil dev
+*Base de dados Postgres local
+*Testar todos endpoints
+*Preparar projeto para implantação
+*Arquivo system.properties
+*Profile prod -> commit
 
 ## Pagina Home
 ![image](https://github.com/Italogabrieldias/delivery/assets/101151339/12b9addc-e99f-4913-a771-2462aad5c05b)
