@@ -9,24 +9,24 @@
 
  # Checklist
 - Setup inicial do projeto
- * Dependências
- * Arquivos .properties
- * Configuração de segurança
+ - Dependências
+ - Arquivos .properties
+ - Configuração de segurança
 - Modelo de domínio
- * Entidades e relacionamentos
- * Mapeamento objeto-relacional
- * Seed
+ - Entidades e relacionamentos
+ - Mapeamento objeto-relacional
+ - Seed
 - Criar endpoints
- * [GET] /products
- * [GET] /orders
- * [POST] /orders
- * [PUT] /orders/{id}/delivered
+ - [GET] /products
+ - [GET] /orders
+ - [POST] /orders
+ - [PUT] /orders/{id}/delivered
 - Validar perfil dev
- * Base de dados Postgres local
- * Testar todos endpoints
- * Preparar projeto para implantação
- * Arquivo system.properties
- * Profile prod -> commit 
+ - Base de dados Postgres local
+ - Testar todos endpoints
+ - Preparar projeto para implantação
+ - Arquivo system.properties
+ - Profile prod -> commit 
 
 ## Pagina Home
 ![image](https://github.com/Italogabrieldias/delivery/assets/101151339/12b9addc-e99f-4913-a771-2462aad5c05b)
