@@ -8,20 +8,20 @@
 #### Introdução prática ao Spring Data JPA com banco H2.
 
  # Checklist
-- Setup inicial do projeto
+1. Setup inicial do projeto
  - Dependências
  - Arquivos .properties
  - Configuração de segurança
-- Modelo de domínio
+2. Modelo de domínio
  - Entidades e relacionamentos
  - Mapeamento objeto-relacional
  - Seed
-- Criar endpoints
+3. Criar endpoints
  - [GET] /products
  - [GET] /orders
  - [POST] /orders
  - [PUT] /orders/{id}/delivered
-- Validar perfil dev
+4. Validar perfil dev
  - Base de dados Postgres local
  - Testar todos endpoints
  - Preparar projeto para implantação
