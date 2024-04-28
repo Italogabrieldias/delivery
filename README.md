@@ -1,42 +1,46 @@
-# Delivery
+# DELIVERY
 
-
-### O que aprendemos nesse projeto.
-#### Criar um simples projeto Java web no Spring Boot e Maven
+#### Criando um projeto utilizando framework Spring boot. 
 #### Introdução prática a injeção de dependência no Spring Boot
-#### Introdução prática a REST / web services
+#### Introdução prática a REST / Web services
 #### Introdução prática ao Spring Data JPA com banco H2.
 
- # Checklist
+#
+ # CHECKLIST
+
 1. Setup inicial do projeto
+  
  - Dependências
  - Arquivos .properties
  - Configuração de segurança
+
 2. Modelo de domínio
- - Entidades e relacionamentos
+
+ - Entidades e Relacionamentos
  - Mapeamento objeto-relacional
  - Seed
-3. Criar endpoints
+
+3. Criando Endpoints
+
  - [GET] /products
  - [GET] /orders
  - [POST] /orders
  - [PUT] /orders/{id}/delivered
-4. Validar perfil dev
- - Base de dados Postgres local
- - Testar todos endpoints
- - Preparar projeto para implantação
+
+4. Validar perfil de Desenvolvedor
+
+ - Base de dados Postgres.
+ - Teste de endpoints
  - Arquivo system.properties
  - Profile prod -> commit 
 
-## Pagina Home
+## Página Home
 ![image](https://github.com/Italogabrieldias/delivery/assets/101151339/12b9addc-e99f-4913-a771-2462aad5c05b)
 
-## Pagina de pedidos
+## Página de Pedidos
 ![image](https://github.com/Italogabrieldias/delivery/assets/101151339/e93cc01d-2f07-4ce9-aadd-fb6a023ea189)
 ![image](https://github.com/Italogabrieldias/delivery/assets/101151339/dd7d3857-3e66-4d50-994e-49080c2e746c)
 
-## Front-end, devenvolvido com react.js, utilizando typescript.
-## definindo rotas com a função router e usando para conversar com o backend o axios. 
-## para o sistema de mapas foi utilizado a API do mapboxToken.
-
-
+###### Front-end, desenvolvido com react.js e  typescript.
+###### Definição de rotas com a função Router assin usando para se comunicar com back-end. 
+###### No sistema de mapas foi utilizado a API do mapboxToken, para pegar a localização do cliente e como fazer a entrega dos pedidos.
