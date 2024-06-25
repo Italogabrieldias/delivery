@@ -1,4 +1,4 @@
-# DELIVERY REACT 
+ # DELIVERY REACT 
 
 https://delivery-mu-livid.vercel.app/
 
@@ -13,15 +13,15 @@ https://delivery-mu-livid.vercel.app/
 
 1. Setup inicial do projeto
   
- - Dependências
- - Arquivos .properties
- - Configuração de segurança
+ - Geração de Dependências.
+ - Arquivos .properties.
+ - Configuração de segurança.
 
 2. Modelo de domínio
 
- - Entidades e Relacionamentos
- - Mapeamento objeto-relacional
- - Seed
+ - Entidades e Relacionamentos.
+ - Mapeamento objeto-relacional.
+ - Seed do banco.
 
 3. Criando Endpoints
 
@@ -47,5 +47,5 @@ https://delivery-mu-livid.vercel.app/
 
 
 ###### Front-end, desenvolvido com react.js e  typescript.
-###### Definição de rotas com a função Router assin usando para se comunicar com back-end. 
-###### No sistema de mapas foi utilizado a API do mapboxToken, para pegar a localização do cliente e como fazer a entrega dos pedidos.
+###### Definição de rotas com a função Router. Tendo que comunicar com back-end. 
+###### No sistema de mapas foi utilizado a API do mapboxToken, pegando a localização do clientes e fazer a entrega dos pedidos.
