@@ -38,7 +38,8 @@ https://delivery-mu-livid.vercel.app/
  - Profile prod -> commit 
 
 ## Página Home
-![image](https://github.com/Italogabrieldias/delivery/assets/101151339/12b9addc-e99f-4913-a771-2462aad5c05b)
+![image](https://github.com/Italogabrieldias/delivery/assets/101151339/d84f9837-a3b0-4b5d-afc3-5c80c0020617)
+
 
 ## Página de Pedidos
 ![image](https://github.com/Italogabrieldias/delivery/assets/101151339/e93cc01d-2f07-4ce9-aadd-fb6a023ea189)
