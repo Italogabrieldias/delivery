@@ -42,8 +42,9 @@ https://delivery-mu-livid.vercel.app/
 
 
 ## Página de Pedidos
-![image](https://github.com/Italogabrieldias/delivery/assets/101151339/e93cc01d-2f07-4ce9-aadd-fb6a023ea189)
-![image](https://github.com/Italogabrieldias/delivery/assets/101151339/dd7d3857-3e66-4d50-994e-49080c2e746c)
+![image](https://github.com/Italogabrieldias/delivery/assets/101151339/d2b4e1a0-ba84-4fda-a289-f6b96294e01f)
+![image](https://github.com/Italogabrieldias/delivery/assets/101151339/5d44457b-dfe2-4887-95ac-d1113d4279c5)
+
 
 ###### Front-end, desenvolvido com react.js e  typescript.
 ###### Definição de rotas com a função Router assin usando para se comunicar com back-end. 
